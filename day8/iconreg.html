@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>icoreg</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <form action="" style="text-align: center;" >
+        
+        <table style="position: relative; left: 500px; top: 50px;">
+            <tr>
+                <td><label for="Fname">Name:</label><i class="fas fa-user" style="position: absolute;right: 15px;"></i></td>
+                
+                <td><input type="text" id="Fname" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label> <i class="far fa-envelope-open" style="position: absolute;right: 15px;"></i></td>
+               
+                <td><input type="email" name="email" id="email" placeholder="enter email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="psw">Password</label> <i class="fas fa-key"style="position: absolute;right: 15px;"></i></td>
+           
+            <td><input type="password " id="psw" name="passw" required 
+            pattern="(?=.*\d)(?=.*[A-Z]{2})(?=.*[a-z]{2})(?=.*['!$@?*&,]).{8}"
+            title="must have 1 uppercase and 1 lowercase and 1 digits and 1 special characters" ></td> 
+            </tr>
+            
+            <tr>
+                <td><label for="mobile" >Mobile Number</label><i class="fas fa-mobile-alt" style="position: absolute;right: 15px;"></i></td>
+                
+                <td><input type="tel" id="mobile" name="mobile" placeholder="enter mobile number"
+                     pattern="[6-9]{1}[0-9]{9}" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td><input type="radio" id="male" name="gender"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                    <input type="radio" name="gender" id="Others"><label for="Others">Others</label>
+                </td>
+        
+            </tr>
+            <tr>
+                <td><label for="">Language</label></td>
+                <td><input list="language" name="fav">
+                <datalist id="language">
+                    <option value="Telugu">Telugu
+                        
+                    </option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Kannada">Kannada</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="English">English</option>
+                </datalist></td>
+            </tr>
+            <tr>
+                <td><label for="zip" >Zip Code</label><i class="fas fa-map-marker" style="position: absolute;right: 173px;"></i></td>
+                <td><input type="number" id="zip" name="zip" pattern="(?=.*\d){6}" maxlength="6"></td>
+            </tr>
+            <tr>
+                <td><label for="about">About:</label></td>
+                
+                <td><textarea name="about" id="about" cols="20" rows="2"></textarea></td>
+            </tr>
+
+            
+        </table>
+        <br><br>
+        <button type="submit" style="padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 25%;
+        opacity: 0.9;
+        opacity: 1;">Register</button>
+       
+    </form>
+
+</body>
+</html>

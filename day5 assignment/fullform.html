@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullForm</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+        <table>
+            <tr>
+                <th><label for="Fname">First Name:</label><i class="fas fa-user"></i></th>
+                
+                <td><input type="text" id="Fname" name="name" pattern="(?=.*[a-z])(?=.*[A-Z]).{20}" maxlength="20"></td>
+                <td><p>(max 20 char a-z and A-Z)</p></td>
+
+            </tr>
+            <tr>
+                <th><label for="Lname">Last Name:</label><i class="fas fa-user"></i></th>
+                <td><input type="text" id="Lname" name="lname" pattern="(?=.*[a-z])(?=.*[A-Z]).{20}" maxlength="20"></td>
+                <td><p>(max 20 char a-z and A-Z)</p></td>
+            </tr>
+            <tr>
+                <th><label for="dob">DOB</label></th>
+                <td><input type="date" id="dob" name="date"></td>
+            </tr>
+
+            <tr>
+                <th><label for="email">Email</label> <i class="far fa-envelope-open"></i></th>
+               
+                <td><input type="email" name="email" id="email" placeholder="enter email"></td>
+            </tr>
+             <tr>
+                <th><label for="mobile" >Mobile Number</label><i class="fas fa-mobile-alt"></i></th>
+                
+                <td><input type="tel" id="mobile" name="mobile" placeholder="enter mobile number"
+                     pattern="[6-9]{1}[0-9]{9}" maxlength="10"></td>
+            </tr>
+
+            <tr>
+                <th><label for="address">Address</label></th>
+                <td><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="city">City</label></th>
+                <td><input type="text" id="city" name="city" pattern="(?=.*[a-z])(?=.*[A-Z]).{20}" maxlength="20"></td>
+                <td><p>(max 20 char a-z and A-Z)</p></td>
+            </tr>
+             <tr>
+                <th><label for="zip" >Zip Code</label><i class="fas fa-map-marker"></i></th>
+                <td><input type="number" id="zip" name="zip" pattern="(?=.*\d){6}" maxlength="6"></td>
+                <td><p>(6 digits only)</p></td>
+            </tr>
+            <tr>
+                <th><label for="state">State</label></th>
+                <td><input type="text" id="state" name="state"></td>
+            </tr>
+            <tr>
+                <th><label for="country">Country</label></th>
+                <td><input type="text" id="country" name="country"></td>
+            </tr>
+            <tr>
+                <th rowspan="2"><label for="hobbies">Hobbies</label></th>
+                <td> <input type="checkbox" id="hobbies" name="hobbies" value="Drawing">Drawing
+                    <input type="checkbox" id="hobbies" name="hobbies"value="Singing">Singing
+                    <input type="checkbox" id="hobbies" name="hobbies" value="Dancing">Dancing</td>
+                
+            </tr>
+            <tr>
+                <td><input type="checkbox" id="hobbies" name="hobbies" value="Others">Others
+                <input type="text" id="hobbies" name="hobbies"></td>
+            </tr>
+            <table>
+            <tr>
+                <th rowspan="5"><label for="Qualification">Qualification</label></th>
+                <th>sl.no</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+        
+            <tr>
+                <td style="text-align: center;">01</td>
+                <td style="text-align: center;">Class X</td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">02</td>
+                <td style="text-align: center;">Class II</td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">03</td>
+                <td style="text-align: center;">Graduation</td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">04</td>
+                <td style="text-align: center;">Master</td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+                <td><input type="text" id="Qualification" name="Qualification"></td>
+            </tr>
+        </table>
+            <tr>
+                <th>
+                    <label for="Course">Courses<br> Applied For</label>
+                </th>
+                <td>
+                    <input type="checkbox" id="Course" name="Course" value="BCA">BCA
+                    <input type="checkbox" id="Course" name="Course"value="B.com">B.com
+                    <input type="checkbox" id="Course" name="Course" value="B.sc">B.sc                  
+                    <input type="checkbox" id="Course" name="Course" value="B.A">B.A
+                </td>
+            </tr>
+            
+        
+
+
+            
+        </table>
+        <br><br><br>
+        <button type="submit" style="align-items: center;justify-content: center;;">Submit</button>
+        <button type="reset" style="align-items: center;justify-content: center;">Reset</button>
+     </fieldset>   
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+/*img[alt|=tomb]
+{
+    border: 2px solid blue;
+}
+img[alt^=tomb]
+{
+    border: red 2px solid;
+}
+img[alt$=tomb]
+{
+    border:2px solid green;
+}*/
+img[alt*=tomb]
+{
+    border: brown 2px solid;
+}

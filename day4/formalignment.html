@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Data Entry</h1>
+    <form action="#">
+        <table cellspacing="5" >
+            <tr> 
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" placeholder="enter name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email" placeholder="enter email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" name="password" id="password" placeholder="enter password"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td><input type="radio" id="male" name="gender"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                </td>
+        
+            </tr>
+            <tr>
+                <td><label for="mobile" >Mobile Number</label></td>
+                <td><input type="text" id="mobile" name="mobile" placeholder="enter mobile number"></td>
+            </tr>
+            <tr>
+                <td><label for="state">State</label></td>
+                <td>
+                    <select id="state">
+                        <option value="karnataka">karnataka</option>
+                        <option value="Telugana">Telugana</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="andrapradesh">andrapradesh</option>
+                    </select>
+                   
+                </td>
+            </tr>
+        
+        </table>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+       
+    </form>
+</body>
+</html>
